@@ -1,0 +1,26 @@
+{
+  "name": "chuck-facts",
+  "version": "1.0.0",
+  "description": "Random Chuck Norris facts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeelisM/API_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeelisM/API_test/issues"
+  },
+  "homepage": "https://github.com/MeelisM/API_test#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.11"
+  }
+}
