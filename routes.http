@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/chuckFacts/add
+content-type: application/json
+
+{
+    "fact": "Test fact",
+}
+
+###
+
+GET http://localhost:3001/api/chuckFacts
