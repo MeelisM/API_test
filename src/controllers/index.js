@@ -1,3 +1,4 @@
 module.exports = {
-  getChuckFacts: require('./getChuckFacts.controller'),
+  getFacts: require('./getFacts.controller'),
+  addFacts: require('./addFacts.controller'),
 };
