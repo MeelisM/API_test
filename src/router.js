@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const { getChuckFacts } = require('./controllers');
+const { getFacts, addFacts } = require('./controllers');
 
-router.get('/chuckFacts', getChuckFacts);
+router.get('/chuckFacts', getFacts );
+router.post('/chuckFacts/add', addFacts );
 
 module.exports = router;
