@@ -2,7 +2,7 @@ POST http://localhost:3001/api/chuckFacts/add
 content-type: application/json
 
 {
-    "fact": "Test fact",
+    "fact": "Chuck Norris is the reason Waldo is hiding."
 }
 
 ###
