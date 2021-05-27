@@ -3,10 +3,8 @@ const Schema = mongoose.Schema;
 
 const chuckSchema = new Schema({
   fact:  { 
-    type: String, 
-    required: false, 
-    minlength: 2, 
-    maxlength: 100 },
+    type: String
+  }
 })
 
 chuckSchema.set('toJSON', { virtuals: true });
