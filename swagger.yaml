@@ -9,6 +9,8 @@
     paths:
       /api/chuckFacts:
         get:
+          tags:
+          - "facts"
           summary: Returns a joke
           description: Returns a string.
           responses:
@@ -21,7 +23,6 @@
       /api/chuckFacts/add:
         post:
           tags:
-          - "Chuck Norris"
           - "facts"
           summary: Saves a joke
           description: Posts a string
