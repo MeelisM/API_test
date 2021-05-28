@@ -1,0 +1,46 @@
+    openapi: 3.0.0
+    info:
+      title: Chuck Norris facts
+      description: Gives the user a random Chuck Norris fact
+      version: 1.0.0
+    servers:
+      - url: http://localhost:3001/
+        description: for production
+    paths:
+      /api/chuckFacts:
+        get:
+          summary: Returns a joke
+          description: Returns a string.
+          responses:
+            '200':    # status code
+              description: A JSON object of events data
+              content:
+                application/json:
+                  schema:
+                    $ref: '#/components/schemas/Fact'
+      /api/chuckFacts/add:
+        post:
+          tags:
+          - "Chuck Norris"
+          - "facts"
+          summary: Saves a joke
+          description: Posts a string
+          responses:
+            '200':    # status code
+              description: A JSON object of events data
+              content:
+                application/json:
+                  schema:
+                    $ref: '#/components/schemas/addFact'
+    components:
+      schemas:
+        Fact:
+          type: object
+          properties:
+            fact:
+              type: string
+        addFact:
+          type: object
+          properties:
+            fact:
+              type: string
