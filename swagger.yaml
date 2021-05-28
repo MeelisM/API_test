@@ -14,12 +14,17 @@
           summary: Returns a joke
           description: Returns a string.
           responses:
-            '200':    # status code
+            '200':
               description: A JSON object of events data
               content:
                 application/json:
                   schema:
                     $ref: '#/components/schemas/Fact'
+            '400':
+              description: "Invalid query"
+            '404': 
+              description: "Chuck Norris forbids you to see this content"
+              
       /api/chuckFacts/add:
         post:
           tags:
@@ -33,6 +38,10 @@
                 application/json:
                   schema:
                     $ref: '#/components/schemas/addFact'
+            '400':
+              description: "Invalid post request"
+            '404':
+              description: "Chuck Norris forbids you to see this content"
     components:
       schemas:
         Fact:
