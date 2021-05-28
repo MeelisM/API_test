@@ -32,7 +32,7 @@
           summary: Saves a joke
           description: Posts a string
           responses:
-            '200':    # status code
+            '200': 
               description: A JSON object of events data
               content:
                 application/json:
